@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="cabecalho">
         <h1>Minha página HTML Básica</h1>
         <a href="#">Voltar</a>
     </header>
@@ -120,6 +120,19 @@
     <footer>
         &copy;2024 - Ana Karolina
     </footer>
+    <script>
+        const header = document.getElementById('cabecalho');
+
+        //adiciona mais uma palavra
+        // header.style.color = 'red'
+        // const h1 = document.createElement('h1');
+        // h1.textContent = "teste";
+        // header.append(h1);
+
+        header.addEventListener('keydown', (e) => {
+            console.log(`Foi clicado na tecla: ${e.key}`)
+        });
+    </script>
 </body>
 
 </html>
